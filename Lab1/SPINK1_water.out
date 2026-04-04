@@ -1,0 +1,71 @@
+########################################
+# Program: water
+# Rundate: Sat  4 Apr 2026 07:31:15
+# Commandline: water
+#    -auto
+#    -stdout
+#    -asequence emboss_water-I20260404-073111-0802-22725545-p1m.asequence
+#    -bsequence emboss_water-I20260404-073111-0802-22725545-p1m.bsequence
+#    -datafile EBLOSUM62
+#    -gapopen 10.0
+#    -gapextend 0.5
+#    -aformat3 pair
+#    -sprotein1
+#    -sprotein2
+# Align_format: pair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: NM_003122.5
+# 2: XM_016150311.2
+# Matrix: EBLOSUM62
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 373
+# Identity:     294/373 (78.8%)
+# Similarity:   294/373 (78.8%)
+# Gaps:           2/373 ( 0.5%)
+# Score: 1630.5
+# 
+#
+#=======================================
+
+NM_003122.5      200 GACGTGGTAAGTGCGGTGCAGTTTTCAACTGACCTCTGGACGCAGAACTT    249
+                     ||.||.|||.||.|.|||..||||...|||||.||||||||.||.|.|||
+XM_016150311.      1 GAAGTAGTAGGTTCAGTGTGGTTTCTGACTGAGCTCTGGACACACAGCTT     50
+
+NM_003122.5      250 CAGCCATGAAGGTAACAGGCATCTTTCTTCTCAGTGCCTTGGCCCTGTTG    299
+                     |||.|||||||||||||||||||.|.|||||||.|||||||||.|||.||
+XM_016150311.     51 CAGTCATGAAGGTAACAGGCATCCTGCTTCTCATTGCCTTGGCTCTGATG    100
+
+NM_003122.5      300 AGTCTATCTGGTAACACTGGAGCTGACTCCCTGGGAAGAGAGGCCAAATG    349
+                     |||.|.|||||||||.||.||||||||..|..|||||||.||||...|||
+XM_016150311.    101 AGTTTCTCTGGTAACGCTAGAGCTGACGTCACGGGAAGAAAGGCAGTATG    150
+
+NM_003122.5      350 TTACAATGAACTTAATGGATGCACCAAGATATATGACCCTGTCTGTGGGA    399
+                     |..||||.||||.|.||||||..|||.||||||..|||||||||||||||
+XM_016150311.    151 TACCAATAAACTGAGTGGATGTCCCAGGATATACAACCCTGTCTGTGGGA    200
+
+NM_003122.5      400 CTGATGGAAATACTTATCCCAATGAATGCGTGTTATGTTTTGAAAATCGG    449
+                     ||.||||||.|||.|||.|.||||||||||.|||||||.|.|||||...|
+XM_016150311.    201 CTAATGGAATTACATATACAAATGAATGCGAGTTATGTATGGAAAACAAG    250
+
+NM_003122.5      450 AAACGCCAGACTTCTATCCTCATTCAAAAATCTGGGCCTTGCTGAGAACC    499
+                     ||.|||||||.|.||.||||||||.|||||..|||.|.||||||||||||
+XM_016150311.    251 AAGCGCCAGATTCCTGTCCTCATTAAAAAAGATGGCCGTTGCTGAGAACC    300
+
+NM_003122.5      500 AAGGTTTTGAAATCCCATCAGGTCACCGCGAGGCCTGACTGGCCTTATTG    549
+                     ||||||.||||||||.||.||||||||..||.|||....||||||.|.||
+XM_016150311.    301 AAGGTTCTGAAATCCTATAAGGTCACCATGATGCCCAGTTGGCCTGACTG    350
+
+NM_003122.5      550 TTGAAT--AAATGTATCTGAATA    570
+                     .|||||  |||||.||||.||||
+XM_016150311.    351 CTGAATAAAAATGCATCTAAATA    373
+
+
+#---------------------------------------
+#---------------------------------------

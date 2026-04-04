@@ -1,0 +1,89 @@
+########################################
+# Program: needle
+# Rundate: Sat  4 Apr 2026 07:28:35
+# Commandline: needle
+#    -auto
+#    -stdout
+#    -asequence emboss_needle-I20260404-072831-0022-26145270-p1m.asequence
+#    -bsequence emboss_needle-I20260404-072831-0022-26145270-p1m.bsequence
+#    -datafile EDNAFULL
+#    -gapopen 10.0
+#    -gapextend 0.5
+#    -endopen 10.0
+#    -endextend 0.5
+#    -aformat3 pair
+#    -snucleotide1
+#    -snucleotide2
+# Align_format: pair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: NM_003122.5
+# 2: XM_016150311.2
+# Matrix: EDNAFULL
+# Gap_penalty: 10.0
+# Extend_penalty: 0.5
+#
+# Length: 576
+# Identity:     296/576 (51.4%)
+# Similarity:   296/576 (51.4%)
+# Gaps:         206/576 (35.8%)
+# Score: 1153.5
+# 
+#
+#=======================================
+
+NM_003122.5        1 AATACTTCTCCTTGCTGCTGCCATGTGAAGAAGGATGTGTTTGCTTCTCC     50
+                                                                       
+XM_016150311.      1 --------------------------------------------------      0
+
+NM_003122.5       51 TTCTGCCATGATTGTGACATTCCCAGAACCTGGAGGCCAGGCTATGACAC    100
+                                                                       
+XM_016150311.      1 --------------------------------------------------      0
+
+NM_003122.5      101 AGAGTCAATCAATAACCAGGGAGATCTGTGATATAGCCCAGTAGGTGGGG    150
+                                                                       
+XM_016150311.      1 --------------------------------------------------      0
+
+NM_003122.5      151 CCTTGCTGCCATCTGCCATATGACCCTTCCAGTCCCAGGCTTCTGAAGAG    200
+                                                                      |
+XM_016150311.      1 -------------------------------------------------G      1
+
+NM_003122.5      201 ACGTGGTAAGTGCGGTGCAGTTTTCAACTGACCTCTGGACGCAGAACTTC    250
+                     |.||.|||.||.|.|||..||||...|||||.||||||||.||.|.||||
+XM_016150311.      2 AAGTAGTAGGTTCAGTGTGGTTTCTGACTGAGCTCTGGACACACAGCTTC     51
+
+NM_003122.5      251 AGCCATGAAGGTAACAGGCATCTTTCTTCTCAGTGCCTTGGCCCTGTTGA    300
+                     ||.|||||||||||||||||||.|.|||||||.|||||||||.|||.|||
+XM_016150311.     52 AGTCATGAAGGTAACAGGCATCCTGCTTCTCATTGCCTTGGCTCTGATGA    101
+
+NM_003122.5      301 GTCTATCTGGTAACACTGGAGCTGAC-TCCCTGGGAAGAGAGGCCAAATG    349
+                     ||.|.|||||||||.||.|||||||| ||.| |||||||.||||...|||
+XM_016150311.    102 GTTTCTCTGGTAACGCTAGAGCTGACGTCAC-GGGAAGAAAGGCAGTATG    150
+
+NM_003122.5      350 TTACAATGAACTTAATGGATGCACCAAGATATATGACCCTGTCTGTGGGA    399
+                     |..||||.||||.|.||||||..|||.||||||..|||||||||||||||
+XM_016150311.    151 TACCAATAAACTGAGTGGATGTCCCAGGATATACAACCCTGTCTGTGGGA    200
+
+NM_003122.5      400 CTGATGGAAATACTTATCCCAATGAATGCGTGTTATGTTTTGAAAATCGG    449
+                     ||.||||||.|||.|||.|.||||||||||.|||||||.|.|||||...|
+XM_016150311.    201 CTAATGGAATTACATATACAAATGAATGCGAGTTATGTATGGAAAACAAG    250
+
+NM_003122.5      450 AAACGCCAGACTTCTATCCTCATTCAAAAATCTGGGCCTTGCTGAGAACC    499
+                     ||.|||||||.|.||.||||||||.|||||..|||.|.||||||||||||
+XM_016150311.    251 AAGCGCCAGATTCCTGTCCTCATTAAAAAAGATGGCCGTTGCTGAGAACC    300
+
+NM_003122.5      500 AAGGTTTTGAAATCCCATCAGGTCACCGCGAGGCCTGACTGGCCTTATTG    549
+                     ||||||.||||||||.||.||||||||..||.|||....||||||.|.||
+XM_016150311.    301 AAGGTTCTGAAATCCTATAAGGTCACCATGATGCCCAGTTGGCCTGACTG    350
+
+NM_003122.5      550 TTGAAT--AAATGTATCTGAATATCC    573
+                     .|||||  |||||.||||.||||   
+XM_016150311.    351 CTGAATAAAAATGCATCTAAATA---    373
+
+
+#---------------------------------------
+#---------------------------------------
