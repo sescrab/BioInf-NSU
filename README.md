@@ -1,2 +1,2 @@
 # BioInf-NSU
-Repository fo NSU bioinformatics course
+Repository for NSU bioinformatics course
