@@ -1,0 +1,128 @@
+[sescrab@archlinux-btw flyte]$ flyte run --local hello.py hello_world_wf
+  > Launching local execution...
+[FLYTE OUTPUT] Hello, World! from Flyte!
+╭──────────────────────── Local Success ─────────────────────────╮
+│ Completed Local Run                                            │
+│ Path: /tmp/flyte/metadata/a9ad5644-77f8-4173-81bd-22e7c0d7ab98 │
+│ ➡  Outputs: ActionOutputs(o0="Hello, World! from Flyte!")     │
+╰────────────────────────────────────────────────────────────────╯
+(flyte-env311) [sescrab@archlinux-btw flyte]$ flyte run --local pipeline.py main
+  > Launching local execution...
+=== Проверка зависимостей ===
+OK: fastqc найден в ./FastQC/fastqc
+OK: minimap2 найден
+OK: samtools найден
+OK: freebayes найден
+Индекс ../hg38.fa.mmi уже существует, пропускаем индексацию
+Запуск FastQC для R1...
+[CMD] ../FastQC/fastqc ../SRR32806055_1.fastq -o ./ -t 7
+null
+Analysis complete for SRR32806055_1.fastq
+
+Started analysis of SRR32806055_1.fastq
+Approx 5% complete for SRR32806055_1.fastq
+Approx 10% complete for SRR32806055_1.fastq
+Approx 15% complete for SRR32806055_1.fastq
+Approx 20% complete for SRR32806055_1.fastq
+Approx 25% complete for SRR32806055_1.fastq
+Approx 30% complete for SRR32806055_1.fastq
+Approx 35% complete for SRR32806055_1.fastq
+Approx 40% complete for SRR32806055_1.fastq
+Approx 45% complete for SRR32806055_1.fastq
+Approx 50% complete for SRR32806055_1.fastq
+Approx 55% complete for SRR32806055_1.fastq
+Approx 60% complete for SRR32806055_1.fastq
+Approx 65% complete for SRR32806055_1.fastq
+Approx 70% complete for SRR32806055_1.fastq
+Approx 75% complete for SRR32806055_1.fastq
+Approx 80% complete for SRR32806055_1.fastq
+Approx 85% complete for SRR32806055_1.fastq
+Approx 90% complete for SRR32806055_1.fastq
+Approx 95% complete for SRR32806055_1.fastq
+
+Запуск FastQC для R2...
+[CMD] ../FastQC/fastqc ../SRR32806055_2.fastq -o ./ -t 7
+null
+Analysis complete for SRR32806055_2.fastq
+
+Started analysis of SRR32806055_2.fastq
+Approx 5% complete for SRR32806055_2.fastq
+Approx 10% complete for SRR32806055_2.fastq
+Approx 15% complete for SRR32806055_2.fastq
+Approx 20% complete for SRR32806055_2.fastq
+Approx 25% complete for SRR32806055_2.fastq
+Approx 30% complete for SRR32806055_2.fastq
+Approx 35% complete for SRR32806055_2.fastq
+Approx 40% complete for SRR32806055_2.fastq
+Approx 45% complete for SRR32806055_2.fastq
+Approx 50% complete for SRR32806055_2.fastq
+Approx 55% complete for SRR32806055_2.fastq
+Approx 60% complete for SRR32806055_2.fastq
+Approx 65% complete for SRR32806055_2.fastq
+Approx 70% complete for SRR32806055_2.fastq
+Approx 75% complete for SRR32806055_2.fastq
+Approx 80% complete for SRR32806055_2.fastq
+Approx 85% complete for SRR32806055_2.fastq
+Approx 90% complete for SRR32806055_2.fastq
+Approx 95% complete for SRR32806055_2.fastq
+
+Выравнивание ридов minimap2...
+[CMD] minimap2 -ax map-ont -t 7 ../hg38.fa.mmi ../SRR32806055_1.fastq ../SRR32806055_2.fastq > sample.sam
+[M::main::6.226*0.97] loaded/built the index for 455 target sequence(s)
+[M::mm_mapopt_update::7.266*0.97] mid_occ = 728
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 455
+[M::mm_idx_stat::7.929*0.98] distinct minimizers: 100202295 (37.96% are singletons); average occurrences: 5.732; average spacing: 5.587; total length: 3209286105
+[M::worker_pipeline::53.128*5.94] mapped 3418335 sequences
+[M::worker_pipeline::91.472*6.42] mapped 3415707 sequences
+[M::worker_pipeline::129.523*6.62] mapped 3417582 sequences
+[M::worker_pipeline::166.146*6.72] mapped 3408325 sequences
+[M::worker_pipeline::203.488*6.79] mapped 3410910 sequences
+[M::worker_pipeline::240.914*6.84] mapped 3419331 sequences
+[M::worker_pipeline::278.555*6.88] mapped 3417463 sequences
+[M::worker_pipeline::314.937*6.90] mapped 3419269 sequences
+[M::worker_pipeline::352.586*6.92] mapped 3411377 sequences
+[M::worker_pipeline::389.506*6.93] mapped 3411010 sequences
+[M::worker_pipeline::398.776*6.92] mapped 1198466 sequences
+[M::worker_pipeline::441.785*6.91] mapped 3402307 sequences
+[M::worker_pipeline::479.149*6.92] mapped 3397870 sequences
+[M::worker_pipeline::515.741*6.94] mapped 3400721 sequences
+[M::worker_pipeline::552.722*6.95] mapped 3396917 sequences
+[M::worker_pipeline::589.798*6.96] mapped 3394412 sequences
+[M::worker_pipeline::626.989*6.96] mapped 3401188 sequences
+[M::worker_pipeline::664.021*6.97] mapped 3400406 sequences
+[M::worker_pipeline::701.203*6.98] mapped 3403584 sequences
+[M::worker_pipeline::737.745*6.98] mapped 3395842 sequences
+[M::worker_pipeline::774.841*6.99] mapped 3397486 sequences
+[M::worker_pipeline::785.468*6.98] mapped 1357042 sequences
+[M::main] Version: 2.30-r1287
+[M::main] CMD: minimap2 -ax map-ont -t 7 ../hg38.fa.mmi ../SRR32806055_1.fastq ../SRR32806055_2.fastq
+[M::main] Real time: 785.726 sec; CPU: 5481.743 sec; Peak RSS: 11.780 GB
+
+Выравнивание завершено
+Конвертация SAM в BAM...
+[CMD] samtools view -bS -@7 sample.sam > sample.bam
+Конвертация завершена
+Запуск samtools flagstat...
+[CMD] samtools flagstat sample.bam > sample_flagstat.txt
+Статистика сохранена
+Запуск оценки ридов...
+Процент картированных ридов: 98.17%
+OK: Качество картирования приемлемое (98.17% >= 90.0%)
+Сортировка BAM файла...
+[CMD] samtools sort -@7 sample.bam -o sample_sorted.bam
+[bam_sort_core] merging from 5 files and 7 in-memory blocks...
+
+[CMD] samtools index sample_sorted.bam
+Сортировка завершена
+Запуск freebayes для вызова вариантов...
+[CMD] freebayes -f ../hg38.fa sample_sorted.bam > sample.vcf
+index file ../hg38.fa.fai not found, generating...
+
+Вызов вариантов завершён, VCF сохранён в sample.vcf
+╭───────────────────────────────────────────────── Local Success ─────────────────────────────────────────────────╮
+│ Completed Local Run                                                                                             │
+│ Path: /tmp/flyte/metadata/a4c73b0d-98c6-43ef-8b5e-0c389f6a41c6                                                  │
+│ ➡  Outputs: ActionOutputs(o0={'percent_mapped': 98.17, 'quality_ok': True, 'vcf_file': 'sample.vcf',           │
+│ 'flagstat_file': 'sample_flagstat.txt', 'fastqc_reports': ['SRR32806055_1.fastq_fastqc.html',                   │
+│ 'SRR32806055_2.fastq_fastqc.html']})                                                                            │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
